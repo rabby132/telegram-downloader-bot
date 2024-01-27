@@ -21,8 +21,8 @@ from telegram.error import BadRequest
 
 # CONFIGURATION
 TELEGRAM_TIMEOUT=getenv("TELEGRAM_TIMEOUT", 50)
-TELEGRAM_BOT_TOKEN=getenv("TELEGRAM_BOT_TOKEN", "YOUR TOKEN HERE") # <-- Configure here
-TELEGRAM_CHAT_ID=getenv("TELEGRAM_CHAT_ID", "YOUR CHAT ID HERE") # <-- Configure here
+TELEGRAM_BOT_TOKEN=getenv("TELEGRAM_BOT_TOKEN", "6836264981:AAGd2EPZXoHuZK4B5TxjcgbcwgBnFUtE8w8") # <-- Configure here
+TELEGRAM_CHAT_ID=getenv("TELEGRAM_CHAT_ID", "@dogdwlbot") # <-- Configure here
 TELEGRAM_REFRESH_SECONDS=getenv("TELEGRAM_REFRESH_SECONDS", 1)
 DOWNLOADS_FOLDER=getenv("DOWNLOADS_FOLDER", "/downloads")
 # END CONFIGURATION
@@ -48,7 +48,7 @@ def downloader(filenames,urls):
               if chunk: 
                   f.write(chunk)
         print("Download completed")
-        filename=""
+        filename="@dogdwlbot"
  
 
 
